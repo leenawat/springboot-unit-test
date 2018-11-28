@@ -12,9 +12,12 @@ public class Item {
 	private String name;
 	private int price;
 	private int quantity;
-	
+
 	@Transient
 	private int value;
+
+	protected Item() {
+	}
 
 	public Item(int id, String name, int price, int quantity) {
 		this.id = id;
